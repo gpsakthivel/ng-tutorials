@@ -1,0 +1,12 @@
+<!--date-picker-->
+<!--<mat-form-field>-->
+<!--  <input matInput [matDatepicker]="myDatePicker" [min]="minDate" [max]="maxDate">-->
+<!--  <mat-datepicker-toggle [for]="myDatePicker" matSuffix></mat-datepicker-toggle>-->
+<!--  <mat-datepicker #myDatePicker startView="multi-year"></mat-datepicker>-->
+<!--</mat-form-field>-->
+
+<mat-form-field>
+  <input matInput [matDatepicker]="myDatePicker" [matDatepickerFilter]="dateFilter">
+  <mat-datepicker-toggle [for]="myDatePicker" matSuffix></mat-datepicker-toggle>
+  <mat-datepicker #myDatePicker></mat-datepicker>
+</mat-form-field>
