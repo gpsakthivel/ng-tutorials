@@ -1,0 +1,5 @@
+<!--split-two-way-binding-->
+<div>
+  <input type="text" [ngModel]="username" (ngModelChange)="greetVishwas($event)">
+  <p>Welcome {{username}}</p>
+</div>

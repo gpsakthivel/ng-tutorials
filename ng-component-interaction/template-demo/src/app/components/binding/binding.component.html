@@ -1,0 +1,26 @@
+<!--binding-->
+
+<!--one-way binding-->
+<!--interpolation-->
+<!--Interpolation: It gets the data from class (.ts) file to template (.html) file-->
+<h1>{{pageTitle}}</h1>
+
+<!--property binding-->
+<!--Property binding: It gets the data from class (.ts) file to template (.html) file-->
+<div>
+  <img [src]="imgUrl" alt="image">
+</div>
+
+<!--event binding-->
+<!--Event binding: It gets the data from template (.html) file to class (.ts) file-->
+<div>
+  <button (click)="incrementCount()">Click</button>
+  <p>Clicked {{count}} times</p>
+</div>
+
+<!--two-way binding-->
+<!--It gets the data from class (.ts) file to template (.html) file. Also, it gets the data from class (.ts) file to template (.html) file-->
+<div>
+  <input type="text" [(ngModel)]="name">
+  <p>Welcome {{name}}</p>
+</div>
